@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.tunesbag"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application android:icon="@drawable/icon" 
+    	android:label="@string/app_name" android:debuggable="false">
+    	<receiver android:name="PlayerWidget" android:label="@string/app_name">
+	    	<intent-filter>
+	    	   	<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<intent-filter>
+	    	   	<action android:name="com.tunesbag.REFRESH_TRACKINFO"/>
+	    	   	<action android:name="com.tunesbag.SET_PAUSE"/>
+	    	   	<action android:name="com.tunesbag.SET_NEXT"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/playerwidget_info"/>
+		</receiver>
+        <activity android:name=".MainGUI"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:launchMode="singleTask"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ACTION_MEDIA_BUTTON" />
+            	<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+            <intent-filter>
+	    	   	<action android:name="com.tunesbag.ACTION_WIDGET_PLAY_PAUSE"/>
+	    	   	<action android:name="com.tunesbag.ACTION_WIDGET_NEXT"/>
+			</intent-filter>
+        </activity>
+		<service android:enabled="true" android:name=".Player"/>
+	
+
+</application>
+    <uses-sdk android:minSdkVersion="7"/>  
+
+
+
+<uses-configuration android:reqTouchScreen="undefined"></uses-configuration>
+</manifest> 

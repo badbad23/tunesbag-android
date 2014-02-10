@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="@string/menu_mainscreen" android:id="@+id/menu_mainscreen" android:icon="@drawable/ic_menu_home"></item>
+<item android:title="@string/menu_preferences" android:id="@+id/menu_preferences" android:icon="@drawable/ic_menu_preferences"></item>
+<item android:title="@string/menu_createplist" android:id="@+id/menu_createplist" android:icon="@drawable/ic_menu_add"></item>
+<item android:title="@string/menu_offlinesync" android:id="@+id/menu_offlinesync" android:icon="@drawable/ic_menu_refresh"></item>
+
+<item android:id="@+id/menu_cancelplaylistdownload" android:title="@string/menu_cancelplaylistdownload" android:icon="@drawable/ic_menu_clear_playlist"></item>
+<item android:id="@+id/menu_sendtrack" android:title="@string/menu_sendtrack" android:icon="@drawable/ic_menu_send"></item><item android:id="@+id/menu_set_ringtone" android:title="@string/menu_set_ringtone" android:icon="@drawable/ic_menu_set_as"></item><item android:title="@string/menu_about" android:id="@+id/menu_about" android:icon="@drawable/ic_menu_info_details"></item>
+
+
+</menu>

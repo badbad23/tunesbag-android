@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainGUI!</string>
+    <string name="app_name">tunesBag</string>
+<string name="tunesBagURL">http://www.tunesbag.com/mobile/</string>
+<string name="ApplicationKey">A6C60612-0197-496B-BB9124666128745F</string>
+
+
+
+
+
+<string name="noplaylist">Keine Playlist gewählt</string>
+<string name="menu_preferences">Einstellungen</string>
+<string name="menu_createplist">Neue Playlist</string>
+<string name="menu_offlinesync">Offline-Sync</string>
+<string name="menu_mainscreen">Startseite</string>
+<string name="menu_about">Über</string>
+<string name="menu_sendtrack">Aktuellen Track senden</string><string name="menu_cancelplaylistdownload">Download abbrechen</string><string name="downloadinfo">Dateien werden heruntergeladen</string>
+
+<string name="notrackselected">Kein Track wurde ausgewählt</string>
+<string name="downloadn_downloadingfile">Lade Track</string>
+<string name="downloadn_of">von</string>
+
+<string name="sharedialog_title">Track versenden</string>
+<string name="actualplaybackbuttontext">aktuelle Wiedergabe</string>
+<string name="shuffle_on">Zufallswiedergabe aktiviert</string>
+<string name="shuffle_off">Zufallswiedergabe deaktiviert</string>
+<string name="repeat_none">Nichts wiederholen</string>
+<string name="repeat_all">Playlist wiederholen</string>
+<string name="repeat_one">Track wiederholen</string>
+<string name="tracknotexists">Der Track ist auf dem Gerät nicht verfügbar</string>
+<string name="menu_set_ringtone">Als Klingelton setzen</string>
+</resources>
